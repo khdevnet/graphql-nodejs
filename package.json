@@ -1,7 +1,22 @@
 {
+  "scripts": {
+    "precommit": "lint-staged",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
   "dependencies": {
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.12.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.10.2"
   }
 }
