@@ -1,4 +1,4 @@
-# graphql-nodejs play kit &nbsp;
+# Warehouse GraphQL &nbsp;
 
 Boilerplate and tooling for authoring **data API** backends with **[Node.js][node]** and
 **[GraphQL][gql]**. It is best suited for developing a **GraphQL API** endpoint as a standalone
