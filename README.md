@@ -7,9 +7,8 @@ Boilerplate and tooling for authoring **data API** backends with **[Node.js][nod
 ## Tech Stack
 
 * [Docker][docker], [Node.js][node], [Yarn][yarn], [TypeScript][typescript] — core platform and dev tools
-* [Express][express], [Passport.js][passport], [session][session], [cors][cors] etc. — common HTTP-server features
-* [GraphQL.js][gqljs], [GraphQL.js Relay][gqlrelay], [DataLoader][loader], [validator][validator] — [GraphQL][gql] schema and API endpoint
-* [Nodemailer][mailer], [Handlebars][hbs], [Juice][juice] — transactional email and email templates /w layout support
+* [Express][express], [cors][cors] etc. — common HTTP-server features
+* [GraphQL.js][gqljs], [DataLoader][loader], [validator][validator] — [GraphQL][gql] schema and API endpoint
 
 ## Directory Layout
 
