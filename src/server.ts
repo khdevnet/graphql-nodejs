@@ -6,7 +6,7 @@ import schema from './schema';
 
 const app = express();
 
-app.get('/graphql/schema', (req, res) => {
+app.get('/graphql/schema', (_, res) => {
   res.type('text/plain').send(printSchema(schema));
 });
 

@@ -1,5 +1,5 @@
 import UserType from './UserType';
-import { GraphQLList, GraphQLNonNull, GraphQLString } from 'graphql';
+import { GraphQLList, GraphQLString } from 'graphql';
 
 const me = {
   type: UserType,
