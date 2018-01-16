@@ -1,16 +1,26 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
+import { GraphQLFloat, GraphQLInt } from 'graphql/type/scalars';
 
 export default new GraphQLObjectType({
-  name: 'User',
+  name: 'Product',
   fields: {
     id: {
+      type: GraphQLString
+    },
+    sku: {
       type: GraphQLString
     },
     name: {
       type: GraphQLString
     },
-    email: {
+    price: {
+      type: GraphQLFloat
+    },
+    description: {
       type: GraphQLString
+    },
+    count: {
+      type: GraphQLInt
     }
   }
 });

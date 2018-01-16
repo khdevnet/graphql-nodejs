@@ -1,6 +1,5 @@
 import * as express from 'express';
 import * as graphqlHTTP from 'express-graphql';
-import { buildSchema } from 'graphql';
 import { printSchema } from 'graphql';
 
 import schema from './schema';
