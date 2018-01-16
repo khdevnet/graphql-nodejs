@@ -17,17 +17,9 @@ Boilerplate and tooling for authoring **data API** backends with **[Node.js][nod
 .
 ├── /dist/                      # The compiled output (via TypeScript)
 ├── /src/                       # Node.js application source files
-│   ├── /emails/                # Handlebar templates for sending transactional email
-│   ├── /routes/                # Express routes, e.g. /login/facebook
 │   ├── /schema/                # GraphQL schema type definitions
-│   ├── /utils/                 # Utility functions (mapTo, mapToMany etc.)
-│   ├── /app.ts                 # Express.js application
-│   ├── /Context.ts             # Data loaders and other context-specific stuff
-│   ├── /email.ts               # Client utility for sending transactional email
-│   ├── /errors.ts              # Custom errors and error reporting
-│   ├── /passport.ts            # Passport.js authentication strategies
 │   ├── /server.ts              # Node.js server (entry point)
-│   └── /types.ts               # TypeScript type definitions
+├── /types/                       # TypeScript type definitions
 ├── package.json                # List of project dependencies
 ```
 
