@@ -7,6 +7,6 @@ export default new GraphQLSchema({
         name: 'Query',
         fields: {
             ...userQueries,
-        },
+        }
     })
 });

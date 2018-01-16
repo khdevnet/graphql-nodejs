@@ -1,5 +1,5 @@
 import UserType from './UserType';
-import { GraphQLList } from 'graphql';
+import { GraphQLList, GraphQLNonNull, GraphQLString } from 'graphql';
 
 const me = {
   type: UserType,
@@ -14,8 +14,12 @@ const me = {
 
 const users = {
   type: new GraphQLList(UserType),
-  async resolve() {
-    return [{
+  args: {
+    id: { type: GraphQLString }
+  },
+  async resolve(_: any, args: any) {
+    const { id } = args;
+    const data = [{
       id: '123',
       name: 'anton',
       email: 'anton@gmail.com'
@@ -25,6 +29,12 @@ const users = {
       name: 'andrey',
       email: 'andrey@gmail.com'
     }];
+
+    if (id) {
+      return data.filter(u => u.id == id);
+    }
+
+    return data;
   }
 };
 

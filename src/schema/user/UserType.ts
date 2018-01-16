@@ -12,6 +12,6 @@ export default new GraphQLObjectType({
     },
     email: {
       type: GraphQLString
-    },
-  },
+    }
+  }
 });
