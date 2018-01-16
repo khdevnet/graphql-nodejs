@@ -1,7 +1,8 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
+import productQueries from '../product/queries';
 
 export default new GraphQLObjectType({
-  name: 'User',
+  name: 'Category',
   fields: {
     id: {
       type: GraphQLString
@@ -9,8 +10,9 @@ export default new GraphQLObjectType({
     name: {
       type: GraphQLString
     },
-    email: {
+    description: {
       type: GraphQLString
-    }
+    },
+    ...productQueries
   }
 });

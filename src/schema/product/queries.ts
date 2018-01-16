@@ -1,19 +1,9 @@
-import UserType from './UserType';
 import { GraphQLList, GraphQLString } from 'graphql';
 
-const me = {
-  type: UserType,
-  resolve() {
-    return {
-      id: '124',
-      name: 'anton',
-      email: 'anton@gmail.com'
-    };
-  }
-};
+import ProductType from './ProductType';
 
-const users = {
-  type: new GraphQLList(UserType),
+const products = {
+  type: new GraphQLList(ProductType),
   args: {
     id: { type: GraphQLString }
   },
@@ -21,13 +11,19 @@ const users = {
     const { id } = args;
     const data = [{
       id: '123',
-      name: 'anton',
-      email: 'anton@gmail.com'
+      sku: '123',
+      price: 123,
+      count: 123,
+      name: 'Mens',
+      description: 'Mens description'
     },
     {
       id: '124',
-      name: 'andrey',
-      email: 'andrey@gmail.com'
+      sku: '123',
+      price: 123,
+      count: 123,
+      name: 'Mens',
+      description: 'Mens description'
     }];
 
     if (id) {
@@ -39,6 +35,5 @@ const users = {
 };
 
 export default {
-  me,
-  users
+  products
 };
