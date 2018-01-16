@@ -6,7 +6,7 @@ Boilerplate and tooling for authoring **data API** backends with **[Node.js][nod
 
 ## Tech Stack
 
-* [Docker][docker], [Node.js][node], [Yarn][yarn], [TypeScript] — core platform and dev tools
+* [Docker][docker], [Node.js][node], [Yarn][yarn], [TypeScript][typescript] — core platform and dev tools
 * [Express][express], [Passport.js][passport], [session][session], [cors][cors] etc. — common HTTP-server features
 * [GraphQL.js][gqljs], [GraphQL.js Relay][gqlrelay], [DataLoader][loader], [validator][validator] — [GraphQL][gql] schema and API endpoint
 * [Nodemailer][mailer], [Handlebars][hbs], [Juice][juice] — transactional email and email templates /w layout support
@@ -69,3 +69,4 @@ Boilerplate and tooling for authoring **data API** backends with **[Node.js][nod
 [validator]: https://github.com/chriso/validator.js
 [mailer]: https://nodemailer.com/
 [hbs]: http://handlebarsjs.com/
+[typescript]: https://github.com/Microsoft/TypeScript
