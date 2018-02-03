@@ -3,7 +3,6 @@
 * [Warehouse High Level Architecture View](https://github.com/khdevnet/warehouse/wiki/High-Level-Architecture-View)
 
 ## Warehouse GraphQL
-## Goals
 **GraphQL API** endpoint as a standalone (micro)service, backing up web front-ends and/or mobile apps requests.
 It will be used for internal purposes and in future for external clients to share oor services.
 
