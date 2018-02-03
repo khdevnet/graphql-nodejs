@@ -1,8 +1,11 @@
-# Warehouse GraphQL &nbsp;
+# Warehouse
+* [Home](https://github.com/khdevnet/warehouse)
+* [Warehouse High Level Architecture View](https://github.com/khdevnet/warehouse/wiki/High-Level-Architecture-View)
 
-Boilerplate and tooling for authoring **data API** backends with **[Node.js][node]** and
-**[GraphQL][gql]**. It is best suited for developing a **GraphQL API** endpoint as a standalone
-(micro)service, backing up web front-ends and/or mobile apps.
+## Warehouse GraphQL
+## Goals
+**GraphQL API** endpoint as a standalone (micro)service, backing up web front-ends and/or mobile apps requests.
+It will be used for internal purposes and in future for external clients to share oor services.
 
 ## Tech Stack
 
