@@ -28,6 +28,66 @@ Boilerplate and tooling for authoring **data API** backends with **[Node.js][nod
 * [VS Code][code] editor (preferred) + [Project Snippets][vcsnippets],
   [EditorConfig][vceditconfig], TSLint, Typescript.
   plug-ins.
+## Getting Started
+
+Just clone the repo and run `docker-compose up`:
+
+```bash
+git clone https://github.com/kriasoft/nodejs-api-starter.git example-api
+cd example-api                  # Change current directory to the newly created one
+docker-compose up               # Launch Docker containers with the Node.js API app running inside
+```
+
+The API server must become available at [http://localhost:8080/graphql](http://localhost:8080/graphql)
+([live demo][demo]).
+
+Once the Docker container named `api` is started, the Docker engine executes `node tools/run.js`
+command that installs Node.js dependencies, migrates database schema to the latest version,
+compiles Node.js app from source files (see [`src`](./src)) and launches it with "live reload"
+on port `8080`.
+
+If you need to manually rollback and re-apply the latest database migration file, run the following:
+
+```bash
+yarn docker-db-rollback         # Rollbacks the latest migration
+yarn docker-db-migrate          # Migrates database to the latest version (see /migrates folder)
+yarn docker-db-seed             # Seeds database with test data (see /seeds folder)
+```
+
+In order to open a shell from inside the running "api" container, run:
+
+```bash
+docker-compose exec api /bin/sh
+```
+
+Similarly, if you need to open a PostgreSQL shell ([psql][psql]), execute this command:
+
+```bash
+docker-compose exec db psql <db> -U postgres
+```
+
+For the full list of automation scripts available in this project, please reffer to "scripts"
+section in the [`package.json`](./package.json) file and the [`tools`](./tools) folder.
+
+
+## Testing
+
+```bash
+yarn lint                       # Find problematic patterns in code
+yarn check                      # Check source code for type errors
+yarn docker-test                # Run unit tests once inside a Docker container
+yarn docker-test-watch          # Run unit tests in watch mode inside a Docker container
+```
+
+For more information visit http://facebook.github.io/jest/
+
+
+## Debugging
+
+In order to run the app with [V8 inspector][v8debug] enabled, simply replace `node tools/run.js`
+with `node --inspect=0.0.0.0:9229 tools/run.js` in either [`docker-compose.yml`](docker-compose.yml)
+file or, even better, in `docker-compose.override.yml`. Then restart the app (`docker-compose up`) and
+[attach your debugger][vsdebug] to `127.0.0.1:9230` (see [`.vscode/launch.json`](./.vscode/launch.json))
 
 ## Related Projects
 
