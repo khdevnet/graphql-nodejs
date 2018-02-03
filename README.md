@@ -1,8 +1,4 @@
-# Warehouse
-* [Home](https://github.com/khdevnet/warehouse)
-* [Warehouse High Level Architecture View](https://github.com/khdevnet/warehouse/wiki/High-Level-Architecture-View)
-
-## Warehouse GraphQL
+# Warehouse GraphQL
 **GraphQL API** endpoint as a standalone (micro)service, backing up web front-ends and/or mobile apps requests.
 It will be used for internal purposes and in future for external clients to share oor services.
 
@@ -96,6 +92,10 @@ file or, even better, in `docker-compose.override.yml`. Then restart the app (`d
 * [GraphQL.js](https://github.com/graphql/graphql-js) — The JavaScript reference implementation for [GraphQL](http://graphql.org/)
 * [DataLoader](https://github.com/facebook/dataloader) — Batching and caching for GraphQL data access layer
 * [Membership Database](https://github.com/membership/membership.db) — SQL schema boilerplate for user accounts, profiles, roles, and auth claims
+
+## Warehouse
+* [Home](https://github.com/khdevnet/warehouse)
+* [Warehouse High Level Architecture View](https://github.com/khdevnet/warehouse/wiki/High-Level-Architecture-View)
 
 [node]: https://nodejs.org
 [js]: https://developer.mozilla.org/docs/Web/JavaScript
