@@ -36,37 +36,12 @@ cd example-api                  # Change current directory to the newly created 
 docker-compose up               # Launch Docker containers with the Node.js API app running inside
 ```
 
-The API server must become available at [http://localhost:8080/graphql](http://localhost:8080/graphql)
-([live demo][demo]).
+The API server must become available at [http://localhost:8080/graphql](http://localhost:8080/graphql).
 
 Once the Docker container named `api` is started, the Docker engine executes `node tools/run.js`
 command that installs Node.js dependencies, migrates database schema to the latest version,
 compiles Node.js app from source files (see [`src`](./src)) and launches it with "live reload"
 on port `8080`.
-
-If you need to manually rollback and re-apply the latest database migration file, run the following:
-
-```bash
-yarn docker-db-rollback         # Rollbacks the latest migration
-yarn docker-db-migrate          # Migrates database to the latest version (see /migrates folder)
-yarn docker-db-seed             # Seeds database with test data (see /seeds folder)
-```
-
-In order to open a shell from inside the running "api" container, run:
-
-```bash
-docker-compose exec api /bin/sh
-```
-
-Similarly, if you need to open a PostgreSQL shell ([psql][psql]), execute this command:
-
-```bash
-docker-compose exec db psql <db> -U postgres
-```
-
-For the full list of automation scripts available in this project, please reffer to "scripts"
-section in the [`package.json`](./package.json) file and the [`tools`](./tools) folder.
-
 
 ## Testing
 
