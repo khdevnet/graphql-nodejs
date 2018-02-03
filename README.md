@@ -69,7 +69,7 @@ file or, even better, in `docker-compose.override.yml`. Then restart the app (`d
 * [DataLoader](https://github.com/facebook/dataloader) — Batching and caching for GraphQL data access layer
 * [Membership Database](https://github.com/membership/membership.db) — SQL schema boilerplate for user accounts, profiles, roles, and auth claims
 
-## Warehouse
+## Warehouse Navigation
 * [Home](https://github.com/khdevnet/warehouse)
 * [Goals](https://github.com/khdevnet/warehouse/blob/master/README.md#goals)
 * [Features](https://github.com/khdevnet/warehouse#features)
