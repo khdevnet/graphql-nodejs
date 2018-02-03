@@ -26,12 +26,13 @@ It will be used for internal purposes and in future for external clients to shar
 * [VS Code][code] editor (preferred) + [Project Snippets][vcsnippets],
   [EditorConfig][vceditconfig], TSLint, Typescript.
   plug-ins.
+  
 ## Getting Started
 
 Just clone the repo and run `docker-compose up`:
 
 ```bash
-git clone https://github.com/kriasoft/nodejs-api-starter.git example-api
+git clone https://github.com/khdevnet/warehouse-graphql
 cd example-api                  # Change current directory to the newly created one
 docker-compose up               # Launch Docker containers with the Node.js API app running inside
 ```
