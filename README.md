@@ -71,7 +71,10 @@ file or, even better, in `docker-compose.override.yml`. Then restart the app (`d
 
 ## Warehouse
 * [Home](https://github.com/khdevnet/warehouse)
-* [Warehouse High Level Architecture View](https://github.com/khdevnet/warehouse/wiki/High-Level-Architecture-View)
+* [Goals](https://github.com/khdevnet/warehouse/blob/master/README.md#goals)
+* [Features](https://github.com/khdevnet/warehouse#features)
+* [Development](https://github.com/khdevnet/warehouse/blob/master/README.md#development)
+* [User Documentation](https://github.com/khdevnet/warehouse/blob/master/README.md#user-documentation)
 
 [node]: https://nodejs.org
 [js]: https://developer.mozilla.org/docs/Web/JavaScript
